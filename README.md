@@ -1,20 +1,14 @@
-Assignment 4 (Week 9): Unsupervised Learning for Policyholder Segmentation
-Course: Data Analytics for Actuarial Science
-Week: 9
-Topics: PCA, K-Means, Hierarchical Clustering
-Dataset: policyholder_churn.csv (or similar policyholder dataset)
-Deliverables:
-1 Jupyter Notebook (Assignment4_unsupervised.ipynb)
-2–3 page report (PDF) summarizing findings and actuarial interpretation
-Weight: ~15% (adjust as you like)
-Background (for students)
-Insurance companies often group policyholders into segments for pricing, marketing, and retention strategies.
-In this assignment, you will use unsupervised learning (PCA + clustering) to discover natural groups in a portfolio of policyholders.
-Assume you have the dataset policyholder_churn.csv with variables:
-age – policyholder age
-tenure_years – years with the insurer
-num_claims – number of claims filed
-policy_type – Life / Health / Motor
-annual_premium – annual premium charged
-churn – 1 if the policyholder lapsed, 0 otherwise
-For this assignment, use only the explanatory variables (age, tenure_years, num_claims, policy_type, annual_premium) for PCA and clustering. You may use churn later only for interpretation, not for training.
+You are given a synthetic portfolio of life insurance policies observed over time. Some policies have an observed claim event (death/TPD/CI), 
+while others are right-censored (admin censoring or lapse). Policies also have delayed entry (left truncation) via entry_month.
+Files survival_policies.csv (main survival dataset; includes censoring + delayed entry)
+survival_claims.csv (only event rows; claim amount and cause)
+Allowed packages
+Use Python 3.10+ with: pandas, numpy, matplotlib, scipy, lifelines
+Install if needed:
+pip install lifelines scipy pandas matplotlib numpy
+What you must submit (deliverables)
+A clean notebook/script that:
+Loads data, validates it, and documents assumptions
+Produces required tables/figures
+Fits models and evaluates them on train/test split
+A 1–2 page actuarial interpretation memo answering the interpretation questions (below)
