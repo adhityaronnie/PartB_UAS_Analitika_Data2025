@@ -11,7 +11,7 @@ A clean notebook/script that:
 Loads data, validates it, and documents assumptions
 Produces required tables/figures
 Fits models and evaluates them on train/test split
-A 1–2 page actuarial interpretation memo answering the interpretation questions (below)
+A 1–2 page actuarial interpretation memo answering the interpretation questions (please look on the instruction pdf)
 
 Dataset 1: survival_policies.csv (n=2500)
 - policy_id: unique policy identifier
